@@ -1,187 +1,870 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.body{
+    overflow-x: hidden;
+}
+
+/*navbar*/
+.i-btn{
+        display: none;
+    }
+.navbar-logo{
     
-    <title>Artbind Designs</title>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!--navbar-->
-    <nav class="navbar">
-        <div class="navbar-logo">
-                <img src="Artbind Logo- Colour-nobg-Photoroom.png" class="art">
-        </div>
-        
-        <div class="navbar-div" id="navlink">
-            
-         
-            <ul class="navbar-li" onclick="hidemenu()">
-                
-                <i class="fa-solid fa-xmark"></i>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#abt">About</a></li>
-                <li><a href="#sevice">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        
-       
-        <div class="bars" >
-    <button class="i-btn" onclick="showmenu()"><i class="fa-solid fa-bars" ></i></button>
-    </div>
-    </nav>
+    z-index: 1;
+}
+.navbar-div{
     
-    <!--home-->
-    <section class="home" id="home">
-        <div class="content">
-            <h1>Artbind Designs</h1>
-            <p class="p1">Binding Creativity with purpose</p>
-            <p class="p2">Professional Graphic Designing Services</p>
-        </div>
-    </section>
+    padding-left: 700px;
+    
+}
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    background-color: #120112;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.navbar2.scrolled {
+  background-color: #e4e312;
+}
+.navbar2.scrolled li a{
+  color: #120112; 
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar{
+    background-color: #120112;
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
+    
+}
+.navbar-logo img{
+    width: 60px;
+    margin:20px 50px ;
+}
+.navbar-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-li{
+    padding-right: 15px;
+    color: #e4e312;
+    
+}
+.navbar-li li{
+    display: inline;
+    list-style: none;
+    
+    
+}
+.navbar-li li a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #e4e312;
+}
+.navbar.scrolled {
+  background-color: #e4e312;
+}
+.navbar.scrolled li a{
+  color: #120112; 
+}
+.fa-xmark{
+    display: none;
+}
+.fa-bars{
+    display: none;
+}
+/*home*/
 
-    <!--abt-->
-    <section class="abt" id="abt">
-        <div class="abt-content">
-            <h1>About Me</h1>
-            <p>At Artbind Designs, we believe great design isn’t just about looking good — it’s about saying something meaningful. Born from a passion for creativity and purpose, our work goes beyond aesthetics to deliver visual stories that connect, communicate, and inspire.</p>
-            <p>True to our tagline, “Binding Creativity with Purpose,” every project we take on blends imaginative design with thoughtful intent. From bold branding to minimalist posters and digital visuals, we craft each piece to align with your vision while standing out with clarity and style.</p>
-            <p>Whether you're a startup finding your voice or an established brand looking to refresh your presence, we’re here to transform your ideas into impactful visuals.</p>
-        </div>
-    </section>
+.home {
+    height: 100vh;
+    width: 100%;
+    background-color: #120112;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
 
-    <!--services-->
-    <section class="sevices" id="sevice">
-        <div class="heading">
-            <h1>What I Do</h1>
-        </div>
-        <div class="container">
-            <div class="box1 box">
-                <div class="box-content">
-                <h1>Branding & Identity</h1>
-                <p>We build strong brand visuals—from logos and color palettes to complete brand kits. Everything you need to make your brand instantly recognizable.</p>
-                </div>
-            </div>
-            <div class="box2 box">
-                <div class="box-content">
-                <h1>Print Design</h1>
-                <p>Posters, flyers, business cards, brochures—we design print materials that leave a lasting impression and align with your brand.</p>
-                </div>
-            </div>
-            <div class="box3 box"> 
-                <div class="box-content">
-                
-                <h1>Social Media Graphics</h1>
-                <p>Boost your online presence with eye-catching posts, stories, ads, and banners designed to engage and grow your audience.</p>
-            </div>
-            </div>
-            <div class="box4 box">
-                <div class="box-content">
-                <h1>Packaging Design</h1>
-                <p>We create packaging that not only protects but also promotes your product, making it stand out on shelves or in unboxing videos.</p>
-            </div>
-            </div>
-            <div class="box5 box">
-                <div class="box-content">
-                <h1>Custom Illustrations</h1>
-                <p>Unique illustrations tailored to your brand or project—perfect for campaigns, websites, merchandise, or storytelling visuals.</p>
-                </div>
-            </div>
-             <div class="box6 box">
-                <div class="box-content">
-                <h1>Presentation Design</h1>
-                <p>Designing impactful and professional slide decks for business, pitches, or creative storytelling.</p>
-                </div>
-        </div>
-    </section>
+.content {
+    color: #e4e312;
+}
 
-   <!--Portfolio-->
-   <section class="portfolio" id="portfolio">
-        <div class="screen">
-            <div class="slider">
-                <div class="image">
-                    <img src="Artbind Logo- Colour.png"  class="im1 im">
-                    <img src="Event Poster.png" class="im2 im">
-                    <img src="Frame 1 (1).png" class="im3 im">
-                    <img src="INWED-June 23 (2).png" class="im4 im">
-                    <img src="May 15.png" class="im5 im">
-                    <img src="May 18.png" class="im6 im">
-                    <img src="SHA.png" class="im7 im">
-                </div>
-                 
-                <button class="prev" onclick="prevSlide()"><</button>
-                <button class="next" onclick="nextSlide()">></button>
-                
-                    <a href="show.html"><button class="show-more-btn">Show More</button></a>
-                
-            </div>
-            
-            </div>
-        </div>
-   </section>
-     
-    <!--contact-->
-   <div class="contact" id="contact">
-     <!--contact-1nbox-->
-        <div class="contact-page">
-            <form action="">
-                <h1>Message me </h1>
-                <div class="input-box">
-                    <input type="text" placeholder="Name" required>
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="input-box">
-                    <input type="email" placeholder="Email" required>
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="input-box">
+.content h1 {
+    font-size: 60px;
+}
 
-                    <textarea class="input-box" placeholder="Enter message"></textarea>
-                    <i class="fa-solid fa-message"></i>
-                </div>
-                <button class="btn">Submit</button>
-            </form>
-            
-            
-        </div>
+.p1 {
+    font-size: 30px;
+}
 
-            <div class="contact-ico">
-                <div class="mail pbox">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=artbinddesigns@gmail.com"><i class="fa-solid fa-envelope pic"></i></a>
-                </div> 
-                <div class="lin pbox">
-                    <a href="https://www.linkedin.com/in/gautham-sankar-p-k-74791235b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin pic"></i></a>
-                </div>
-                <div class="insta pbox">
-                    <a href="https://www.instagram.com/artbind_designs?utm_source=qr&igsh=MWdpZHBtaGVreHYxZg=="><i class="fa-brands fa-instagram pic"></i></a>
-                </div>
-                <div class="phone pbox">
-                    <i class="fa-solid fa-phone pic"  onclick="popup()"></i>
-                </div>
-                <div class="add pbox">
-                    <a href="https://www.google.com/maps/dir/8.552448,76.906496/tvm+kerala/@8.5385034,76.9008045,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3b05bbb805bbcd47:0x15439fab5c5c81cb!2m2!1d76.9366376!2d8.5241391?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot pic" ></i></a>
-                </div>
-            </div>
-         
+.p2 {
+    padding-top: 40px;
+    font-size: 16px;
+}
+/*about*/
+
+.abt {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    
+    height: 100vh;
+}
+
+.abt-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.abt-content h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+
+.abt-content p {
+    font-size: 18px;
+    color: grey;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    word-break: break-word;
+}
+
+/*sevices*/
+.heading {
+    padding: 100px 20px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.box {
+    width: 30%;
+    min-width: 300px;
+    height: 220px;
+    background-color: #8c8c2f57;
+    border-radius: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 80px;
+}
+
+.box-content {
+    margin: 20px;
+    color: black;
+}
+
+.box-content h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.sevices {
+    background-color: #E4E312;
+    padding-bottom: 100px;
+}
+
+
+.box-content p {
+    font-size: 16px;
+}
+
+/*protfolio*/
+
+.portfolio{
+    height: 85vh;
+    width: 100%;
+    background-color:black;
+}
+.screen{
+    padding-top: 300px;
+    height: 550px;
+    padding-left: 170px;
+    overflow: hidden;
+    height: 100%;
+}
+.image img{
+    width: 250px;
+    
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.slider{
+    height: 100%;
+}
+.im{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+}
+.im1{
+    left: 0%;
+    opacity: 0.4;
+    transform: translateX(-50%);
+    z-index: 1;
+    height: 250px;
+}
+.im2{
+    opacity: 0.6;
+    z-index: 2;
+    left: 10%;
+    transform: translateX(-50%);
+    height: 270px;
+}
+
+.im3{
+    left: 25%;
+    transform: translateX(-50%);
+    z-index: 3;
+    opacity: 0.8;
+    height: 290px;
+}
+.im4{
+    left: 42%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 4;
+    height: 319px;
+}
+.im5{
+    left: 60%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+    z-index: 3;
+    height: 290px;
+}
+
+.im6{
+    left: 75%;
+    transform: translateX(-50%);
+    opacity: 0.6;
+    z-index: 2;
+    height: 270px; 
+}
+.im7{
+    left: 85%;
+    transform: translateX(-50%);
+    opacity: 0.4;
+    z-index: 1;
+    height: 250px; 
+}
+.next{
+    right: 25px;
+    z-index: 4;
+    
+}
+.prev{
+    left: -150px;
+}
+.prev, .next {
+    position: absolute;
+    height: 70px;
+    width: 20px;
+    background: yellow;
+    color: black;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    padding-right: 10px;
+}
+
+.show-more-btn{
+    width: 130px;
+    height: 30px;
+    font-size: 19px;
+    border-radius: 30px;
+    border: 0px;
+   background-color: #E4E312;
+   margin-top: 200px;
+   margin-left: 440px;
+}
+
+.show-more-btn:hover {
+    background-color: #120112;
+    border: 2px solid #E4E312;
+    color: #E4E312;
+}
+.show-more-btn:hover a{
+    color: white;
+}
+.show-more-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+/*contact-main-box1*/
+.contact{
+    max-height: 100vh;
+    height: 100%;
+    background: url("Artbind Logo- Transparent.png");
+    background-size: 750px;
+    background-repeat: no-repeat;
+    background-position: 50px -60px;
+    background-color: #d2d1d1;
+
+}
+
+.contact-page{
+    font-size: 25px; 
+    height: 80%;
+    padding: 30px 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+.contact-page h1{
+    text-align: center;
+}
+.contact-page .input-box{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin: 30px 0px
+}
+.input-box input{
+    
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 40px;
+    font-size: 16px;
+    outline: none;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color:black
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.btn{
+    width: 100%;
+    border-radius: 40px;
+    height: 45px;
+    border: 0px;
+    margin-top: 10px;
+}
+.input-box textarea{
+    bottom: 34px;
+    background-color: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 40px;
+    resize: vertical;
+    padding: 12px 45px 20px 20px;
+    height: 340px;
+    color: black;
+    font-size: 16px;
+    width: 100%;
+    height: 100px;
+    
+}
+.input-box textarea::placeholder{
+    color: black;    
+}
+/*box-2*/
+.contact-ico{
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+    gap: 10px;
+}
+.contact-ico i{
+    font-size: 20px;
+    margin: 10px;
+    gap: 20px;
+}
+.pbox{
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/*follow*/
+.follow{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.pbox a{
+    color: #000;
+}
+.fa-envelope:hover{
+    color: red;
+}
+.fa-linkedin:hover{
+    color: rgb(0, 61, 153);
+}
+.fa-instagram:hover{
+    color: rgb(233, 1, 40);
+}
+.fa-phone:hover{
+    color: blue;
+}
+.fa-location-dot:hover{
+    color: red;
+}
+
+/*footer*/
+.footer{
+    height: 25vh;
+    background-color: #7e7e7e;
+    text-align: center;
+
+    padding-top: 50px;
+}
+
+.follow a{
+    color: #000;
+}
+.follow .fa-brands:hover{
+    color: black;
+}
+
+/*page 2*/
+.pim{
+    width: 200px;
+    padding-top: 150px;
+
+}
+.hone2-cont{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    flex-wrap: wrap;
+}
+/*1500*/
+ @media (max-width: 1200px) {
+    .abt-content{
+    text-align: justify;
+    width: 800px;
+    }
+    .heading{
+        margin-left: 150px;
+
+    }
+    .abt-content h1{
+        text-align: center;
+    }
+    .heading{
+    padding-left: 25%;
+    }
+    
+.content h1{
+    padding-top: 100px;
+    
+}
+.home{
+    height: 80vh;
+}
+.show-more{
+    padding-left: 10px;
+}
+.im1{
+    left: -5%;
+}
+.im2{
+    
+    left: 5%;
+}
+
+.im3{
+    left: 25%;
+    
+}
+.im4{
+    left: 45%;
+    
+}
+.im5{
+    left: 70%;
+    
+}
+
+.im6{
+    left: 80%; 
+}
+.im7{
+    left: 90%;
+
+}
+.prev{
+    z-index: 4;
+}
+.portfolio{
+    height: 60vh;
+}
+.contact{
+    height: 50vh;
+    background-size: 550px;
+    background-position: -53px 10px;
+}
+.footer{
+    height: 15vh;
+    padding-top: 30px;
+}
+
+.navbar-div ul li{
+    display: block;
+    
+}
+.navbar-div{
+   position: absolute;
+   right: 0;
+   height: 100vh;
+   background-color: grey;
+    padding-left: 60px;
+    width: 300px;
+    padding: 0;
+    right: -340px;
+    background-color: #E4E312;
+}
+.navbar-li{
+    padding-bottom: 700px;
+    padding-top: 230px;
+    
+    
+}
+.navbar-li li{
+    margin: 30px;
+    font-size: 25px;
+    padding-left: 60px;
+    
+}
+.navbar.scrolled {
+  background: transparent;
+}
+.fa-xmark{
+    display: block;
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.content h1{
+    font-size: 80px;
+}
+.p1{
+    font-size: 40px;
+}
+.content{
+    padding-top: 30px;
+}
+.fa-bars{
+    display: block;
+    padding-right: 50px;
+    padding-top: 50px;
+    z-index: 6;
+    color: #E4E312;
+}
+.navbar.scrolled .fa-bars{
+    color: black;
+ }
+.art{
+display: block;
+}
+.art.scrolled{
+    display: none;
+}
+.bars{
+    padding-left: 190px;
+}
+
+.navbar.scrolled {
+    
+  color: black;
+}
+.navbar li a{
+    color: #000;
+}
+.hone2-cont{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+.pim{
+    width: 200px;
+    padding-top: 50px;
+}
+.navbar2.scroll{
+    display: none;
+}
+
+}
+
+@media (max-width: 768px) {
+    /*navbar*/
+    .i-btn{
+        display: block;
+        width: 60px;
+        height: 30px;
+        margin-top: 20px;
+       background: transparent;
+       border: 0;
+       outline: 0;
+    }
+    .i-btn.scrolled{
         
-            
-        </div>
-    </div>
+    }
+.navbar{
+    width: 100vw;
+}
+.navbar-div ul li{
+    display: block;
+    
+}
+.navbar-div{
+   position: absolute;
+   right: 0;
+   height: 100vh;
+   background-color: grey;
+    padding-left: 60px;
+    width: 300px;
+    padding: 0;
+    display: none;
+    background-color: #E4E312;
+}
+.navbar-li{
+    padding-bottom: 700px;
+    padding-top: 230px;
+    
+    
+}
+.navbar-li li{
+    margin: 30px;
+    font-size: 25px;
+    padding-left: 60px;
+    
+}
+.navbar.scrolled {
+  background: transparent;
+}
+.fa-bars{
+    display: block;
+    padding: 0%;
+    z-index: 6;
+    color: #E4E312;
+}
+.navbar.scrolled .fa-bars{
+    color: black;
+ }
+.art{
+display: block;
+}
+.art.scrolled{
+    display: none;
+}
+.bars{
+    padding: 0%;
+    width: 150px;
+    height: 150px;
+}
 
-    <!--footer-->
-    <section class="footer">
-        <div class="follow">
-                <a href="https://www.instagram.com/artbind_designs?utm_source=qr&igsh=MWdpZHBtaGVreHYxZg=="><i class="fa-brands fa-instagram in"></i></a>
-                <a href="https://www.linkedin.com/in/gautham-sankar-p-k-74791235b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin li"></i></a>
-            </div>
+.navbar.scrolled {
+    
+  color: black;
+}
+.navbar li a{
+    color: #000;
+}
+    .navbar{
+        max-width: 700px ;
+        width: 100%;
+    }
+
+    /*home*/
+    .home{
+    height: 100vh;
+}
+.p1{
+    font-size: 20px;
+}
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .p1 {
+        font-size: 24px;
+    }
+
+    .p2 {
+        font-size: 14px;
+        padding-bottom: 500px;
+        padding-top: 30px;
+    }
+    .content{
+    padding-top: 330px;
+}
+
+    /*abt*/
+    .abt-content h1 {
+        font-size: 28px;
+        padding-right: 300px;
+        width: 100vw;
+        max-width: 300px;
+        text-align: center;
+        padding: 0%;
+    }
+    .abt{
+        height: 100%;
+    }
+    .abt-content {
+    max-width: 300px;  
+}
+
+    .abt-content p {
+        font-size: 16px;
+        max-width: 300px;
         
-        <p>© 2025 Artbind Designs.All rights reserved.</p>
-    </footer>
-<script src="app.js"></script>
-</body>
-</html>
+    }
+
+
+    /*sevice*/
+     .heading {
+        font-size: 24px;
+        padding: 60px 10px;
+        margin: 0%;
+    }
+    .heading h1{
+        text-align: center;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+    }
+
+    .box-content p {
+        font-size: 14px;
+    }
+
+
+/*protfolio*/
+.portfolio{
+    height: 80vh;
+}
+
+.image img{
+    width: 200px;
+    height: 220px;
+}
+    .im1{
+    left: -30%;
+    
+}
+.im2{
+    
+    left: -20%;
+}
+
+.im3{
+    left: -5%;
+    
+}
+.im4{
+    left: 10%;
+    
+}
+.im5{
+    left: 30%;
+    
+}
+
+.im6{
+    left: 45%; 
+}
+.im7{
+    left: 55%;
+
+}
+.prev{
+    z-index: 4;
+}
+.show-more-btn{
+    
+   margin-top:180px;
+   margin-left: -50px;
+}
+
+/*contact*/
+.contact{
+    height: 90vh;
+    background-size: 450px;
+    background-position: -33px 120px;
+}
+.contact-ico{
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*footer*/
+.footer{
+    height: 15vh;
+    padding-top: 30px;
+}
+
+.hone2-cont{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+
+    }
