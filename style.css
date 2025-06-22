@@ -200,8 +200,9 @@
 .screen{
     padding-top: 300px;
     height: 550px;
-    
+    padding-left: 170px;
     overflow: hidden;
+    height: 100%;
 }
 .image img{
     width: 250px;
@@ -216,8 +217,8 @@
     
 }
 
-.screen{
-    padding-left: 170px;
+.slider{
+    height: 100%;
 }
 .im{
     position: absolute;
@@ -324,7 +325,8 @@
 
 /*contact-main-box1*/
 .contact{
-    height: 100vh;
+    max-height: 100vh;
+    height: 100%;
     background: url("Artbind Logo- Transparent.png");
     background-size: 750px;
     background-repeat: no-repeat;
@@ -686,7 +688,7 @@ display: block;
     display: none;
 }
 .bars{
-    padding-left: 90px;
+    padding-right: 130px;
     width: 150px;
     height: 150px;
 }
