@@ -560,19 +560,17 @@
 }
 .navbar-li{
     padding-bottom: 700px;
-    padding-top: 230px;
-    
-    
+    padding-top: 230px;  
 }
+
 .navbar-logo img{
     width: 70px;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 .navbar-li li{
     margin: 30px;
     font-size: 25px;
     padding-left: 60px;
-    
 }
 .navbar.scrolled {
   background: transparent;
@@ -596,7 +594,7 @@
 }
 .fa-bars{
     display: block;
-    padding-right: 50px;
+    
     padding-top: 50px;
     z-index: 6;
     color: #E4E312;
@@ -607,6 +605,7 @@
 .art{
 display: block;
 }
+
 .art.scrolled{
     display: none;
 }
@@ -657,7 +656,7 @@ display: block;
    height: 100vh;
    background-color: grey;
     padding-left: 60px;
-    width: 300px;
+    width: 250px;
     padding: 0;
      right: -300px;
     background-color: #E4E312;
@@ -686,6 +685,9 @@ display: block;
 .navbar.scrolled .fa-bars{
     color: black;
  }
+.art{
+    margin-right: 0px;
+}
 .art{
 display: block;
 }
