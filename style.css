@@ -337,7 +337,7 @@
 
 .contact-page{
     font-size: 25px; 
-    height: 80%;
+    height: 90vh;
     padding: 30px 40px;
     border-radius: 15px;
     display: flex;
@@ -404,6 +404,7 @@
     justify-content: end;
     padding-right: 80px;
     gap: 10px;
+    padding-bottom: 130px;
 }
 .contact-ico i{
     font-size: 20px;
@@ -444,11 +445,11 @@
 
 /*footer*/
 .footer{
-    height: 25vh;
+    height: 15vh;
     background-color: #7e7e7e;
     text-align: center;
 
-    padding-top: 50px;
+    
 }
 
 .follow a{
@@ -642,7 +643,9 @@ display: block;
 @media (max-width: 768px) {
     /*navbar*/
     
-    
+.art{
+    margin: 10px 20px;
+} 
 .navbar{
     width: 100vw;
 }
@@ -836,7 +839,7 @@ display: block;
 
 /*contact*/
 .contact{
-    height: 90vh;
+    height: 100vh;
     background-size: 450px;
     background-position: -33px 120px;
 }
@@ -863,4 +866,4 @@ display: block;
 }
 
 
-    }
+}
