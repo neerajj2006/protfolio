@@ -84,26 +84,32 @@
 }
 /*home*/
 
-.home{
+.home {
     height: 100vh;
-    
     width: 100%;
     background-color: #120112;
-}
-.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    padding-top: 180px;
-    color: #e4e312; 
+    padding: 20px;
 }
-.content h1{
+
+.content {
+    color: #e4e312;
+}
+
+.content h1 {
     font-size: 60px;
 }
-.p1{
+
+.p1 {
     font-size: 30px;
 }
 
-.p2{
-    padding-top: 120px;
+.p2 {
+    padding-top: 40px;
     font-size: 16px;
 }
 /*about*/
@@ -632,6 +638,28 @@ display: block;
 }
 
 @media (max-width: 768px) {
+    .navbar{
+        max-width: 700px ;
+        width: 100%;
+    }
+    /*home*/
+    .home{
+    height: 100vh;
+}
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .p1 {
+        font-size: 24px;
+    }
+
+    .p2 {
+        font-size: 14px;
+        padding-bottom: 500px;
+        padding-top: 30px;
+    }
+
     /*abt*/
     .abt-content h1 {
         font-size: 28px;
@@ -667,7 +695,14 @@ display: block;
     .box-content p {
         font-size: 14px;
     }
-
+/*protfolio*/
+.portfolio{
+    height: 80vh;
+}
+.image img{
+    width: 200px;
+    height: 220px;
+}
     .im1{
     left: -20%;
     
@@ -700,14 +735,14 @@ display: block;
 .prev{
     z-index: 4;
 }
-.portfolio{
-    height: 90vh;
-}
+
+/*contact*/
 .contact{
     height: 90vh;
-    background-size: 550px;
-    background-position: -53px 10px;
+    background-size: 450px;
+    background-position: -13px 120px;
 }
+/*footer*/
 .footer{
     height: 15vh;
     padding-top: 30px;
@@ -802,6 +837,10 @@ display: block;
 }
 .navbar2.scroll{
     display: none;
+}
+
+
+    }
 }
 .home{
     height: 100vh;
