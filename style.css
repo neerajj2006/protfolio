@@ -687,6 +687,8 @@ display: block;
 }
 .bars{
     padding-left: 90px;
+    width: 150px;
+    height: 150px;
 }
 
 .navbar.scrolled {
@@ -818,7 +820,7 @@ display: block;
 .show-more-btn{
     
    margin-top:180px;
-   margin-left: -30px;
+   margin-left: -50px;
 }
 
 /*contact*/
@@ -829,7 +831,9 @@ display: block;
 }
 .contact-ico{
     padding: 0%;
-    padding-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*footer*/
 .footer{
