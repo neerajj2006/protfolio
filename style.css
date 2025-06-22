@@ -572,6 +572,7 @@
 }
      .navbar-logo img{
     width: 40px;
+         padding-right: 20px;
 }
 .navbar.scrolled {
   background: transparent;
