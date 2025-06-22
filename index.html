@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Artbind Designs</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="navbar-logo">
+                <img src="Artbind Logo- Colour-nobg-Photoroom.png" class="art">
+        </div>
+        
+        <div class="navbar-div" id="navlink">
+            
+         
+            <ul class="navbar-li" onclick="hidemenu()">
+                
+                <i class="fa-solid fa-xmark"></i>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#abt">About</a></li>
+                <li><a href="#sevice">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+       
+        <div class="bars">
+    <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+    </div>
+    </nav>
+    
+    <!--home-->
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Artbind Designs</h1>
+            <p class="p1">Binding Creativity with purpose</p>
+            <p class="p2">Professional Graphic Designing Services</p>
+        </div>
+    </section>
+
+    <!--abt-->
+    <section class="abt" id="abt">
+        <div class="abt-content">
+            <h1>About Me</h1>
+            <p>At Artbind Designs, we believe great design isn’t just about looking good — it’s about saying something meaningful. Born from a passion for creativity and purpose, our work goes beyond aesthetics to deliver visual stories that connect, communicate, and inspire.</p>
+            <p>True to our tagline, “Binding Creativity with Purpose,” every project we take on blends imaginative design with thoughtful intent. From bold branding to minimalist posters and digital visuals, we craft each piece to align with your vision while standing out with clarity and style.</p>
+            <p>Whether you're a startup finding your voice or an established brand looking to refresh your presence, we’re here to transform your ideas into impactful visuals.</p>
+        </div>
+    </section>
+
+    <!--services-->
+    <section class="sevices" id="sevice">
+        <div class="heading">
+            <h1>What I Do</h1>
+        </div>
+        <div class="container">
+            <div class="box1 box">
+                <div class="box-content">
+                <h1>Branding & Identity</h1>
+                <p>We build strong brand visuals—from logos and color palettes to complete brand kits. Everything you need to make your brand instantly recognizable.</p>
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="box-content">
+                <h1>Print Design</h1>
+                <p>Posters, flyers, business cards, brochures—we design print materials that leave a lasting impression and align with your brand.</p>
+                </div>
+            </div>
+            <div class="box3 box"> 
+                <div class="box-content">
+                
+                <h1>Social Media Graphics</h1>
+                <p>Boost your online presence with eye-catching posts, stories, ads, and banners designed to engage and grow your audience.</p>
+            </div>
+            </div>
+            <div class="box4 box">
+                <div class="box-content">
+                <h1>Packaging Design</h1>
+                <p>We create packaging that not only protects but also promotes your product, making it stand out on shelves or in unboxing videos.</p>
+            </div>
+            </div>
+            <div class="box5 box">
+                <div class="box-content">
+                <h1>Custom Illustrations</h1>
+                <p>Unique illustrations tailored to your brand or project—perfect for campaigns, websites, merchandise, or storytelling visuals.</p>
+                </div>
+            </div>
+             <div class="box6 box">
+                <div class="box-content">
+                <h1>Presentation Design</h1>
+                <p>Designing impactful and professional slide decks for business, pitches, or creative storytelling.</p>
+                </div>
+        </div>
+    </section>
+
+   <!--Portfolio-->
+   <section class="portfolio" id="portfolio">
+        <div class="screen">
+            <div class="slider">
+                <div class="image">
+                    <img src="Artbind Logo- Colour.png"  class="im1 im">
+                    <img src="Event Poster.png" class="im2 im">
+                    <img src="Frame 1 (1).png" class="im3 im">
+                    <img src="INWED-June 23 (2).png" class="im4 im">
+                    <img src="May 15.png" class="im5 im">
+                    <img src="May 18.png" class="im6 im">
+                    <img src="SHA.png" class="im7 im">
+                </div>
+                 
+                <button class="prev" onclick="prevSlide()"><</button>
+                <button class="next" onclick="nextSlide()">></button>
+                <div class="show-more">
+                    <a href="show.html"><button class="show-more-btn">Show More</button></a>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+   </section>
+     
+    <!--contact-->
+   <div class="contact" id="contact">
+     <!--contact-1nbox-->
+        <div class="contact-page">
+            <form action="">
+                <h1>Message me </h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Name" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+
+                    <textarea class="input-box" placeholder="Enter message"></textarea>
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+            
+            
+        </div>
+
+            <div class="contact-ico">
+                <div class="mail pbox">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=artbinddesigns@gmail.com"><i class="fa-solid fa-envelope pic"></i></a>
+                </div> 
+                <div class="lin pbox">
+                    <a href="https://www.linkedin.com/in/gautham-sankar-p-k-74791235b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin pic"></i></a>
+                </div>
+                <div class="insta pbox">
+                    <a href="https://www.instagram.com/artbind_designs?utm_source=qr&igsh=MWdpZHBtaGVreHYxZg=="><i class="fa-brands fa-instagram pic"></i></a>
+                </div>
+                <div class="phone pbox">
+                    <i class="fa-solid fa-phone pic"  onclick="popup()"></i>
+                </div>
+                <div class="add pbox">
+                    <a href="https://www.google.com/maps/dir/8.552448,76.906496/tvm+kerala/@8.5385034,76.9008045,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3b05bbb805bbcd47:0x15439fab5c5c81cb!2m2!1d76.9366376!2d8.5241391?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot pic" ></i></a>
+                </div>
+            </div>
+         
+        
+            
+        </div>
+    </div>
+
+    <!--footer-->
+    <section class="footer">
+        <div class="follow">
+                <a href="https://www.instagram.com/artbind_designs?utm_source=qr&igsh=MWdpZHBtaGVreHYxZg=="><i class="fa-brands fa-instagram in"></i></a>
+                <a href="https://www.linkedin.com/in/gautham-sankar-p-k-74791235b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin li"></i></a>
+            </div>
+        
+        <p>© 2025 Artbind Designs.All rights reserved.</p>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
