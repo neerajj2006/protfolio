@@ -9,9 +9,7 @@
 }
 
 /*navbar*/
-.i-btn{
-        display: none;
-    }
+
 .navbar-logo{
     
     z-index: 1;
@@ -640,18 +638,8 @@ display: block;
 
 @media (max-width: 768px) {
     /*navbar*/
-    .i-btn{
-        display: block;
-        width: 60px;
-        height: 30px;
-        margin-top: 20px;
-       background: transparent;
-       border: 0;
-       outline: 0;
-    }
-    .i-btn.scrolled{
-        
-    }
+    
+    
 .navbar{
     width: 100vw;
 }
@@ -667,13 +655,13 @@ display: block;
     padding-left: 60px;
     width: 300px;
     padding: 0;
-    display: none;
+     right: -300px;
     background-color: #E4E312;
 }
 .navbar-li{
     padding-bottom: 700px;
     padding-top: 230px;
-    
+   z-index: 10;
     
 }
 .navbar-li li{
@@ -701,7 +689,9 @@ display: block;
     display: none;
 }
 .bars{
-    padding: 0%;
+    padding-top: 30px;
+    padding-left: 60px;
+    
     width: 150px;
     height: 150px;
 }
@@ -712,11 +702,11 @@ display: block;
 }
 .navbar li a{
     color: #000;
-}
-    .navbar{
-        max-width: 700px ;
+    max-width: 700px ;
         width: 100%;
     }
+
+        
 
     /*home*/
     .home{
@@ -867,4 +857,4 @@ display: block;
 }
 
 
-    }
+}
