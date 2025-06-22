@@ -570,6 +570,9 @@
     padding-left: 60px;
     
 }
+     .navbar-logo img{
+    width: 40px;
+}
 .navbar.scrolled {
   background: transparent;
 }
